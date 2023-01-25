@@ -1,13 +1,53 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>bitwarden.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Bitwardem_AuthCenter</Title>
+    <Authors>Hudson Ventura</Authors>
+    <Description>Nuget package that gives access to items saved in Bitwarden, abstracts and facilitates authentication with more than one step, such as JWT authentication</Description>
+    <PackageIcon>bitwarden.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/hudsonventura/Bitwarden_AuthCenter</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="bw" />
+    <None Remove="bw.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bitwarden.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bw.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="bitwarden.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
