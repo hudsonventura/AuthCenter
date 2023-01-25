@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bitwardem_AuthCenter\Bitwardem_AuthCenter.csproj" />
+    <ProjectReference Include="..\Bitwardem_AuthCenter\Bitwarden_AuthCenter.csproj" />
   </ItemGroup>
 
 </Project>

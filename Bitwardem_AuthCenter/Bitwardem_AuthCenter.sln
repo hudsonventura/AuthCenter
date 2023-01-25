@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitwardem_AuthCenter", "Bitwardem_AuthCenter\Bitwardem_AuthCenter.csproj", "{60629EE7-07B5-4725-83AB-94DC1CF17F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bitwarden_AuthCenter", "Bitwardem_AuthCenter\Bitwarden_AuthCenter.csproj", "{60629EE7-07B5-4725-83AB-94DC1CF17F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Develop", "Develop\Develop.csproj", "{F9714A74-229A-486C-9A92-1B547335450E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develop", "Develop\Develop.csproj", "{F9714A74-229A-486C-9A92-1B547335450E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

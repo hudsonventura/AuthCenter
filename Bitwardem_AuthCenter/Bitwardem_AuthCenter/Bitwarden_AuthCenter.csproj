@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>bitwarden.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Bitwardem_AuthCenter</Title>
+    <Title>Bitwarden_AuthCenter</Title>
     <Authors>Hudson Ventura</Authors>
     <Description>Nuget package that gives access to items saved in Bitwarden, abstracts and facilitates authentication with more than one step, such as JWT authentication</Description>
     <PackageIcon>bitwarden.png</PackageIcon>
@@ -20,16 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="bitwarden.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="bw">
+    <Content Include="bw">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="bw.exe">
+    </Content>
+    <Content Include="bw.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
