@@ -5,10 +5,6 @@ The offical Bitwarden API is only for organisational management.  If you want to
 
 This project is a simple C# wrapper that integrates with the Bitwarden CLI (Command Line Interface) and makes it available as an API (App Programming Interface) accessible via C# code.
 
-
-
-The Bitwarden binary (`bw.exe` for Windows or `bw` for GNU/Linux) CLI needs to be in the same diretcory as the your application. This lib already contains the binary bw. You can update the binary of the BitWarden CLI from the Bitwarden website.
-
 This proof of concept API has only been tested on Windows and GNU/Linux.
 
 The Documentation on the Bitwarden CLI is available here: https://bitwarden.com/help/cli/
@@ -17,6 +13,16 @@ All right reserved for OceanAirdrop. This repo was based on https://github.com/O
 
 Source code: https://github.com/hudsonventura/Bitwarden_AuthCenter
 Nuget package: https://www.nuget.org/packages/Bitwarden_AuthCenter/
+
+<br>
+
+The Bitwarden CLI binary (`bw.exe` for Windows or `bw` for GNU/Linux) CLI needs to be in the same diretcory as your application. This lib already contains the binary bw. But if youwant to user another version, you can update the binary of the BitWarden CLI from the Bitwarden website, available here: https://bitwarden.com/help/cli/
+
+After install Nuget package, you have to configure to copy the binary to your app directory. Set the parameter 'Copy to Output Directory' for 'Copy if newer', as your OS version (`bw.exe` for Windows or `bw` for Gnu/Linux) like this:
+
+<img src="https://github.com/hudsonventura/images/raw/main/bitwarden_binary_copy_if_newest.png" />
+
+<br>
 
 Example C# Code:
 

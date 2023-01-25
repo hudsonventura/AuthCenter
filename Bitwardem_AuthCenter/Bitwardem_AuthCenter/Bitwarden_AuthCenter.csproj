@@ -12,6 +12,7 @@
     <PackageIcon>bitwarden.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/hudsonventura/Bitwarden_AuthCenter</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/hudsonventura/Bitwarden_AuthCenter</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
