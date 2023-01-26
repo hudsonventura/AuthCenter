@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthCenter", "src\AuthCenter.csproj", "{60629EE7-07B5-4725-83AB-94DC1CF17F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthCenter_Bitwarden_Client", "src\AuthCenter_Bitwarden_Client.csproj", "{60629EE7-07B5-4725-83AB-94DC1CF17F38}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_Bitwarden", "examples\Bitwarden\Example_Bitwarden.csproj", "{F9714A74-229A-486C-9A92-1B547335450E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_Authentication_OAuth2", "examples\Authentication_OAuth2\Example_Authentication_OAuth2.csproj", "{A90D9E30-5BEF-4583-A07D-2410657E121C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example_Authentication_OAuth2", "examples\Authentication_OAuth2\Example_Authentication_OAuth2.csproj", "{A90D9E30-5BEF-4583-A07D-2410657E121C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

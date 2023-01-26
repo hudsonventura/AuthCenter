@@ -1,4 +1,4 @@
-# Bitwarden_AuthCenter
+# AuthCenter Bitwarden Client
 
 
 The offical Bitwarden API is only for organisational management.  If you want to manage your Bitwarden Vault there is the BitWarden CLI.
