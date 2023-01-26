@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hudsonventura.Models
+namespace AuthCenter.Models
 {
     [DebuggerDisplay("Username = {username}")]
     public class Login

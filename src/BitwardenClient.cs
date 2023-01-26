@@ -1,27 +1,27 @@
-﻿using hudsonventura.Models;
+﻿using AuthCenter.Models;
 using Microsoft.VisualBasic.FileIO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.Text;
 
-namespace hudsonventura;
+namespace AuthCenter;
 
-public class Bitwarden_AuthCenter : IDisposable
+public class BitwardenClient : IDisposable
 {
     private string m_session = "";
 
-    public Bitwarden_AuthCenter(string url, string userName, string password)
+    public BitwardenClient(string url, string userName, string password)
     {
         m_session = LogIn(url, userName, password);
     }
 
-    public Bitwarden_AuthCenter(string url, string userName, string password, int otp)
+    public BitwardenClient(string url, string userName, string password, int otp)
     {
         m_session = LogIn(url, userName, password, otp);
     }
 
-    public Bitwarden_AuthCenter(string url, string clientId, string clientSecret, string password)
+    public BitwardenClient(string url, string clientId, string clientSecret, string password)
     {
         m_session = LogInUsingApi(url, clientId, clientSecret, password);
         if (m_session == "")

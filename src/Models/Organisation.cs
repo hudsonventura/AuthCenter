@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hudsonventura.Models
+namespace AuthCenter.Models
 {
-    [DebuggerDisplay("Name = {name}")]
-    public class Collection
+    public class Organisation
     {
         public string @object { get; set; }
         public string id { get; set; }
-        public string organizationId { get; set; }
         public string name { get; set; }
-        public string externalId { get; set; }
+        public int status { get; set; }
+        public int type { get; set; }
+        public bool enabled { get; set; }
     }
 }

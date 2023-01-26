@@ -1,7 +1,9 @@
-Bitwardem_AuthCenter/Develop/bin/*
-Bitwardem_AuthCenter/Develop/obj/*
+Develop/bin/*
+Develop/obj/*
 
-Bitwardem_AuthCenter/Bitwardem_AuthCenter/bin/*
-Bitwardem_AuthCenter/Bitwardem_AuthCenter/obj/*
+src/bin/*
+src/obj/*
 
 */.vs/*
+.vs/*
+
