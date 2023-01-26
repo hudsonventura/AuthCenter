@@ -11,8 +11,8 @@ The Documentation on the Bitwarden CLI is available here: https://bitwarden.com/
 
 All right reserved for OceanAirdrop. This project was based on https://github.com/OceanAirdrop/Bitwarden-Vault-CLI-API
 
-Source code: https://github.com/hudsonventura/Bitwarden_AuthCenter
-Nuget package: https://www.nuget.org/packages/Bitwarden_AuthCenter/
+Source code: https://github.com/hudsonventura/AuthCenter
+Nuget package: https://www.nuget.org/packages/AuthCenter/
 
 <br>
 

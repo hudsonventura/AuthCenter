@@ -6,13 +6,13 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>bitwarden.ico</ApplicationIcon>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Bitwarden_AuthCenter</Title>
-    <Authors>Hudson Ventura</Authors>
-    <Description>Nuget package that gives access to items saved in Bitwarden, abstracts and facilitates authentication with more than one step, such as JWT authentication</Description>
+    <Title>AuthCenter with Bitwarden CLI Client</Title>
+    <Authors>Hudson Ventura and OceanAirdrop</Authors>
+    <Description>Nuget package that gives access to items saved in Bitwarden, abstracts and facilitates authentication with more than one step, such as OAuth2/JWT authentication</Description>
     <PackageIcon>bitwarden.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/hudsonventura/Bitwarden_AuthCenter</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/hudsonventura/Bitwarden_AuthCenter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hudsonventura/AuthCenter</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/hudsonventura/AuthCenter</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
