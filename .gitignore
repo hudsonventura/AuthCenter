@@ -1,9 +1,10 @@
-Develop/bin/*
-Develop/obj/*
+*/.vs/*
+.vs/*
 
 src/bin/*
 src/obj/*
 
-*/.vs/*
-.vs/*
-
+examples/Authentication_OAuth2/bin/*
+examples/Authentication_OAuth2/obj/*
+examples/Bitwarden/bin/*
+examples/Bitwarden/obj/*

@@ -5,11 +5,11 @@ The offical Bitwarden API is only for organisational management.  If you want to
 
 This project is a simple C# wrapper that integrates with the Bitwarden CLI (Command Line Interface) and makes it available as an API (App Programming Interface) accessible via C# code.
 
-This proof of concept API has only been tested on Windows and GNU/Linux.
+This proof of concept API has only been tested on Windows and GNU/Linux. Please, contribute by testing on MacOS.
 
 The Documentation on the Bitwarden CLI is available here: https://bitwarden.com/help/cli/
 
-All right reserved for OceanAirdrop. This repo was based on https://github.com/OceanAirdrop/Bitwarden-Vault-CLI-API
+All right reserved for OceanAirdrop. This project was based on https://github.com/OceanAirdrop/Bitwarden-Vault-CLI-API
 
 Source code: https://github.com/hudsonventura/Bitwarden_AuthCenter
 Nuget package: https://www.nuget.org/packages/Bitwarden_AuthCenter/
@@ -24,7 +24,7 @@ After install Nuget package, you have to configure to copy the binary to your ap
 
 <br>
 
-Example C# Code:
+Example Bitwarden Code:
 
 ``` C#
 
@@ -63,6 +63,9 @@ catch (Exception error)
     return;
 }
 
+var vaultItem = bitwarden.GetItem("0b4eb51f-11e6-48dd-80db-bbe41fca9d26");
+Console.WriteLine($"Username: {vaultItem.item.login.username}");
+Console.WriteLine($"Password: {vaultItem.item.login.password}");
 
 {
     // Get the vault status
@@ -113,4 +116,22 @@ catch (Exception error)
 
 } // LogOut()  is called automatically when you exit this using statement.
 
+```
+<br><br>
+
+Example Authentication OAuth2 Code:
+
+``` C#
+using AuthCenter;
+
+Authentication_OAuth2 auth = new Authentication_OAuth2(
+    "https://yourdomain.com"
+    , Authentication_OAuth2.GrantType.client_credentials
+    , "client_secret"
+    , "client_id"
+    , "youScope"
+    , Authentication_OAuth2.Client_Authentication.SendClientCredentialsInBody
+    );
+var token = auth.GetToken("/oauth2/token"); //the endpoint
+Console.WriteLine(token); //It's response string. Maybe you need to convert it to JSON to obtain the token.
 ```

@@ -17,10 +17,10 @@ try
     //Choose just one method to login
 
     //login with email
-    bitwarden = new BitwardenClient(url, email, password);
+    //bitwarden = new BitwardenClient(url, email, password);
 
     //login with email and OTP 2FA
-    bitwarden = new BitwardenClient(url, email, password, otp2FA);
+    //bitwarden = new BitwardenClient(url, email, password, otp2FA);
 
     //login with client_id and client_secret
     bitwarden = new BitwardenClient(url, client_id, client_secret, password);
@@ -35,5 +35,8 @@ catch (Exception error)
 
 
 
-// Get the vault status
-var status = bitwarden.Status();
+var vaultItem = bitwarden.GetItem("0b4eb51f-11e6-48dd-80db-bbe41fca9d26");
+Console.WriteLine($"Username: {vaultItem.item.login.username}");
+Console.WriteLine($"Password: {vaultItem.item.login.password}");
+
+bitwarden.LogOut();
