@@ -3,25 +3,32 @@
 
 The offical Bitwarden API is only for organisational management.  If you want to manage your Bitwarden Vault there is the BitWarden CLI.
 
+
 This project is a simple C# wrapper that integrates with the Bitwarden CLI (Command Line Interface) and makes it available as an API (App Programming Interface) accessible via C# code.
+
+By me a coffee: https://www.buymeacoffee.com/hudsonventura
 
 This proof of concept API has only been tested on Windows and GNU/Linux. Please, contribute by testing on MacOS.
 
-The Documentation on the Bitwarden CLI is available here: https://bitwarden.com/help/cli/
+The documentation on the Bitwarden CLI is available here: https://bitwarden.com/help/cli/
 
-All right reserved for OceanAirdrop. This project was based on https://github.com/OceanAirdrop/Bitwarden-Vault-CLI-API
+All right reserved for OceanAirdrop. This project was based on https://github.com/OceanAirdrop/Bitwarden-Vault-CLI-API . Thanks OceanAirdrop.
 
 Source code: https://github.com/hudsonventura/AuthCenter
+
 Nuget package: https://www.nuget.org/packages/AuthCenter/
 
 <br>
 
-The Bitwarden CLI binary (`bw.exe` for Windows or `bw` for GNU/Linux) CLI needs to be in the same diretcory as your application. This lib already contains the binary bw. But if youwant to user another version, you can update the binary of the BitWarden CLI from the Bitwarden website, available here: https://bitwarden.com/help/cli/
+The Bitwarden CLI binary (`bw.exe` for Windows or `bw` for GNU/Linux) CLI needs to be in the same directory as your application. This lib already contains the Bitwarden's binary. But if you want to user another version, you can update the binary of the BitWarden CLI from the Bitwarden website, available here: https://bitwarden.com/help/cli/
 
-After install Nuget package, you have to configure to copy the binary to your app directory. Set the parameter 'Copy to Output Directory' for 'Copy if newer', as your OS version (`bw.exe` for Windows or `bw` for Gnu/Linux) like this:
+After install this Nuget package, you have to configure to copy the binary to your app directory. Set the parameter 'Copy to Output Directory' for 'Copy if newer', as your OS version (`bw.exe` for Windows or `bw` for Gnu/Linux) like this:
 
 <img src="https://github.com/hudsonventura/images/raw/main/bitwarden_binary_copy_if_newest.png" />
 
+Otherwise you will throw the exception: `bw not found in current directory. Before start, please download the last version of Bitwarden CLI (BW)`
+
+<br>
 <br>
 
 Example Bitwarden Code:
@@ -63,6 +70,7 @@ catch (Exception error)
     return;
 }
 
+//get an username and password
 var vaultItem = bitwarden.GetItem("0b4eb51f-11e6-48dd-80db-bbe41fca9d26");
 Console.WriteLine($"Username: {vaultItem.item.login.username}");
 Console.WriteLine($"Password: {vaultItem.item.login.password}");
